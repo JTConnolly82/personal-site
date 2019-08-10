@@ -1,0 +1,36 @@
+#navlink {
+  transition: ease-in-out .1s;
+  cursor: pointer; 
+  display: inline-flex;
+  padding: 5px;
+  font-size: 1.5rem;
+}
+
+#navlink:hover {
+  box-shadow: 0  2.5px 0px 0px black;
+}
+
+
+
+#link {
+  text-decoration: none;
+  color: black;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+
+span {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+
+#header {
+  align-items: center;
+  width: 90vw;
+  border-bottom: 1px solid #eeb111;
+}
+#header ul {
+  align-items: center;
+}

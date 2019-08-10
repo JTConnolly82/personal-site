@@ -1,0 +1,21 @@
+#socialicon {
+  transition: transform ease-out .1s;
+  margin: 15px;
+}
+
+#socialicon:hover {
+  transform: scale(1.1);
+}
+
+#footer {
+  width: 90vw;
+  align-items: center;
+  border-top: 1px solid #eeb111;
+}
+
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
