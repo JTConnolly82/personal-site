@@ -15,7 +15,7 @@ function App() {
   return (
     <Router>
       <div id='app'>
-        <Header />
+        <Header/>
           <Switch>
             <Route exact path="/" component={Home} />
             <Route exact path="/about" component={About} />

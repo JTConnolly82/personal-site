@@ -1,49 +1,64 @@
+
+@import url('https://fonts.googleapis.com/css?family=DM+Serif+Text&display=swap');
+
+
 .row {
-  width:50%;
-   margin:0 auto;
+  width:80%;
   display: flex;
+}
+
+#aboutpagetitle {
+  font-size: 3rem;
+  position: absolute;
+  height: 70%;
+  font-family: 'DM Serif Text', serif;
 }
 
 .column1 {
   float:left;
    width:50%;
 }
+.column2 {
+  float:right;
+  width:50%;
+}
+
+#aboutimage {
+  position: absolute;
+  right: 10%;
+  width: 26vw;
+  height: 76vh;
+  top: 12%;
+}
 
 #title {
-  padding: 1.5rem;
+  font-family: 'DM Serif Text', serif;
+  margin-top: 2rem;
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 #titletop {
-  padding: 1.5rem;
+  font-family: 'DM Serif Text', serif;
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   margin-top: 3rem;
 }
 
-.column1 ul {
-  
+#description {
+  margin-top: 1rem;
+  width: 60%;
+  font-size: 1.2rem;
 }
 
+
 #iconbutton {
-  margin-top: 1.5rem;
-  margin-left: 250px;
+  position: relative;
+  left: 43%;
+  margin: 2%;
   background-color: #dfad23;
+  font-family: 'DM Serif Text', serif;
 }
 #iconbutton:hover {
   cursor: pointer;
   background-color: #cb980e;
-}
-
-img {
-  margin: 10px;
-}
-
-.column2 {
-  float:right;
-   width:50%;
-}
-
-.clear {
-  clear: both;
 }

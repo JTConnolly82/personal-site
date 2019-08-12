@@ -1,18 +1,41 @@
 import React, {Component} from 'react';
 import "./pages.css";
-import {Transition, Image} from 'semantic-ui-react';
+import './Home.css';
+import {Image} from 'semantic-ui-react';
 
 
 export default class Home extends Component {
 
-  state = { animation: 'swing left', duration: 1000, visible: true }
 
   render() {
-    const { animation, duration, visible } = this.state;
+   
     return (
-      <div id='page' >
-        <h2>My Name John</h2>
+      <>
+     
+      <div className='page' >
+        <div id='outerwrap'>
+        
+        <h1 id='first'> <strong>J</strong>ohn</h1>
+        <h1 id='second'><strong>C</strong>onnolly</h1>
+
+        <Image id='hmimg' src='https://i.imgur.com/T93EYNq.jpg' size='medium' circular />
+          
+          <div id='layer1'>
+          </div>
+
+          <div id='layer2'>
+          </div>
+
+          <div id='layer3'>
+          </div>
+          <div id='layer4'>
+          </div>
+          <div id='layer5'>
+          </div>
+        </div>
       </div>
+      
+      </>
     );
   }
 };

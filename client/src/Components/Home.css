@@ -1,0 +1,78 @@
+
+@import url('https://fonts.googleapis.com/css?family=DM+Serif+Text&display=swap');
+
+
+
+#layer1 {
+  position: absolute;
+  z-index: 3;
+  background-color: grey;
+  height:3.2%;
+  width: 63.7%;
+  top: 64%;
+  left: 19%;
+  }
+  
+  #layer5 {
+    position: absolute;
+    z-index: 3;
+    background-color: grey;
+    height:3.2%;
+    width: 41%;
+    top: 69%;
+    left: 19%;
+    }
+    
+
+  
+  #second {
+    position: absolute;
+    z-index: 4;
+    left: 55%;
+    top:46%;
+    height: 3rem;
+    font-family: 'DM Serif Text', serif;
+    font-size: 8vw;
+    margin-bottom: 6rem;
+  }
+  #first {
+    position: absolute;
+    z-index: 4;
+    left: 56.5%;
+    top: 34%;
+    height: 2rem;
+    font-family: 'DM Serif Text', serif;
+    font-size: 8vw;
+    margin-bottom: 6.5rem;
+  }
+
+  #layer2 {
+    position: absolute;
+    z-index: 0;
+    background-color: #d99e02;
+    height: 34%;
+    width: 47%;
+    top: 33%;
+    left: 13%;
+    }
+
+  
+
+   #hmimg {
+    position: absolute;
+    z-index: 4;
+    left: 13.2%;
+    top: 20%;
+    height: 60%;
+    width: 33%;
+    background-color:white;
+    padding: 20px;
+    border: 2px solid black;
+  }
+   */
+  #outerWrap {
+    position: absolute;
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+  }

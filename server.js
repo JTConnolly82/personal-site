@@ -51,13 +51,6 @@ const smtpTransport = nodemailer.createTransport({
   }
 });
 
-
-// smtpTransport.sendMail(mailOptions, (error, response) => {
-//   error ? console.log(error) : console.log(response);
-//   smtpTransport.close();
-// });
-
-
 const port = process.env.PORT || 5000;
 
 

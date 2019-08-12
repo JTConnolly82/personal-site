@@ -1,13 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=DM+Serif+Text&display=swap');
+
+
+
 #navlink {
-  transition: ease-in-out .1s;
+  margin-right: .5rem;
+  margin-left: .5rem;
   cursor: pointer; 
   display: inline-flex;
-  padding: 5px;
-  font-size: 1.5rem;
 }
 
+#navlinkactive {
+  box-shadow: 0  1.5px 0px 0px black;
+}
 #navlink:hover {
-  box-shadow: 0  2.5px 0px 0px black;
+  box-shadow: 0  1.5px 0px 0px black;
+  transition: ease-in-out .2s;
 }
 
 
@@ -16,21 +23,25 @@
   text-decoration: none;
   color: black;
   font-family: 'Open Sans', sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: bolder;
+  font-family: 'DM Serif Text', serif;
 }
 
 span {
   flex-direction: column;
   display: flex;
   align-items: center;
+  margin-bottom: .5rem;
 }
 
 #header {
   align-items: center;
-  width: 90vw;
-  border-bottom: 1px solid #eeb111;
+  width: 100vw;
+  height: 5vh;
+  border-bottom: 2px solid #eeb111;
 }
+
 #header ul {
-  align-items: center;
+  
 }

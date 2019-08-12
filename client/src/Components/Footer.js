@@ -9,9 +9,9 @@ export default class Footer extends Component {
     return (
       <span id='footer'>
         <ul id='theicons'>
-        <SocialIcon target="_blank" bgColor="#black" id="socialicon" url="https://www.linkedin.com/in/jtc/" style={{ height: 27, width: 27 }}/>
-        <SocialIcon target="_blank" bgColor="#black" id="socialicon" url="https://twitter.com/johntconnolly" style={{ height: 27, width: 27 }}/>
-        <SocialIcon target="_blank" bgColor="#black" id="socialicon" url="https://github.com/JTConnolly82" style={{ height: 27, width: 27 }}/>
+        <SocialIcon target="_blank" bgColor="#black" id="socialicon" url="https://www.linkedin.com/in/jtc/" style={{ height: 23, width: 23 }}/>
+        <SocialIcon target="_blank" bgColor="#black" id="socialicon" url="https://twitter.com/johntconnolly" style={{ height: 23, width: 23 }}/>
+        <SocialIcon target="_blank" bgColor="#black" id="socialicon" url="https://github.com/JTConnolly82" style={{ height: 23, width: 23 }}/>
         </ul>
       </span>
     );
