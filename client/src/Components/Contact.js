@@ -9,10 +9,20 @@ export default class Contact extends Component {
   constructor (props) {
     super(props);
     this.state = {
-      name: '',
-      email: '',
-      message: '',
+      name: { value: ''},
+      email: { value: ''},
+      message: { value: ''} ,
     }
+  }
+
+  checkValidity(value, rules) {
+    let isValid = false;
+    
+    if (rules.required) {
+        isValid = value.trim() !== '';
+      }
+
+    return isValid;
   }
 
   handleSubmit(e){
@@ -35,35 +45,36 @@ export default class Contact extends Component {
         }else if(name=== '' || email === '' || message === '' || response.data.msg === 'fail'){
             console.log("Message failed to send.")
         }
-    })
-}
-
-resetForm(){
-  document.getElementById('contact-form').reset();
-}
-
-
-
+    });
+  }
 
   render() {
-    return (
+  return (
       <div className='page'>
           <h1 id='pagetitle'>Contact John</h1>
           <h3 id='othertitle'>You can reach out to me at JTConnolly82@gmail.com or by using the form below.</h3>
+            
             <form method='POST' action='/submit-form' id='theform'>
+            
             <label for='name'>Name</label>
-            <input type='text' name='name' id='textinput' placeholder="your name"/>
-          
-              <label for='email'>Email</label>
-              <input type='email' name='email' id='textinput' placeholder="email@example.com"/>
-          
-              <label for='message'>Message</label>
-              <textarea type='text' name='message' id='message' placeholder="message for John..."/>
-          
-              <Button type='submit' value='submit' id='sndbtn' content='Send' />
+            <input  required type='text' name='name' id='textinput' placeholder="name"/>
+            
 
-              </form>
-        </div>
+
+            <label for='email'>Email</label>
+            <input  required type='email' name='email' id='textinput' placeholder="email@example.com"/>
+            
+
+
+            <label for='message'>Message</label>
+            <textarea type='text' name='message' id='message' placeholder="message" />
+            
+
+
+            <Button type='submit' value='submit' id='sndbtn' content='Send' />
+
+            </form>
+      </div>
     );
   }
-};
+}

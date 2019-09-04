@@ -20,9 +20,10 @@
 #theform {
   background-color: white;
   max-width: 40%;
+  max-height: 50%;
   margin:6rem auto;
   align-self: center;
-  border: 1px solid black;
+  border: 2px solid black;
   padding: 2rem;
   border-radius: 2px;
 }
@@ -78,7 +79,7 @@ input {
   width: 90vw;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
+  
 }
 
 #contact {
@@ -99,7 +100,7 @@ input {
 
 #othertitle {
   position: relative;
-  top: 8%;
+  top: 7%;
   font-family: 'DM Serif Text', serif;
 }
 

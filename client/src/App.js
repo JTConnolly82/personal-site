@@ -11,17 +11,19 @@ import ContactComplete from './Components/ContactComplete';
 
 
 
+
+
 function App() {
   return (
     <Router>
       <div id='app'>
         <Header/>
           <Switch>
-            <Route exact path="/" component={Home} />
-            <Route exact path="/about" component={About} />
-            <Route exact path="/contact" component={Contact} />
-            <Route exact path='/contactcomplete' component={ContactComplete} />
-            <Route component={NoMatch} />
+            <Route exact path="/" component={ Home } />
+            <Route exact path="/about" component={ About } />
+            <Route exact path="/contact" component={ Contact } />
+            <Route exact path='/contactcomplete' component={ ContactComplete } />
+            <Route component={ NoMatch } />
           </Switch>
         <Footer/>
       </div>

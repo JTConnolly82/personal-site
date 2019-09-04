@@ -31,6 +31,10 @@
   top: 12%;
 }
 
+ul {
+  list-style: none;
+}
+
 #title {
   font-family: 'DM Serif Text', serif;
   margin-top: 2rem;

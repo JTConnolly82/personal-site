@@ -5,6 +5,7 @@ const path = require('path');
 const nodemailer = require('nodemailer');
 const { google } = require("googleapis");
 const OAuth2 = google.auth.OAuth2;
+require('dotenv').config();
 
 app.use(express.urlencoded());
 app.use(bodyParser.json());
@@ -44,7 +45,7 @@ const smtpTransport = nodemailer.createTransport({
   auth: {
        type: "OAuth2",
        user: "johncon82@gmail.com", 
-       clientId: "308713975921-hj6i6dljk9u5fn212mail4ac8o7nvlb4.apps.googleusercontent.com ",
+       clientId: "308713975921-hj6i6dljk9u5fn212mail4ac8o7nvlb4.apps.googleusercontent.com",
        clientSecret: "YigqjYxP8KEq0rmQ6a1DeFau",
        refreshToken: "1/-ZxOkxpnaoUZU1I6hepm9RHEKydxBJWa-mGNZtunRC0",
        accessToken: accessToken
