@@ -6,8 +6,8 @@ import { Button } from 'semantic-ui-react';
 export default class Contact extends Component {
 
 
-  constructor (props) {
-    super(props);
+  constructor () {
+    super();
     this.state = {
       name: { value: ''},
       email: { value: ''},
